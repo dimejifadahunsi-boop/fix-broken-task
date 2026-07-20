@@ -1,0 +1,59 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 3,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1784246981.0299733,
+            "stop": 1784246981.1128716
+        },
+        "tests": [
+            {
+                "name": "test_outputs.py::test_report_is_valid_json_object",
+                "status": "passed",
+                "duration": 0.0014014900079928339,
+                "start": 1784246981.076791,
+                "stop": 1784246981.0792153,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_total_requests",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0012954420235473663,
+                "start": 1784246981.079706,
+                "stop": 1784246981.107418,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_total_requests():\n        \"\"\"Criterion 2: total_requests equals the number of requests in the log.\"\"\"\n>       assert load_report()[\"total_requests\"] == 6, \"expected total_requests == 6\"\nE       AssertionError: expected total_requests == 6\nE       assert 7 == 6\n\n/tests/test_outputs.py:16: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_outputs.py::test_unique_ips",
+                "status": "passed",
+                "duration": 0.0008421709935646504,
+                "start": 1784246981.1078825,
+                "stop": 1784246981.1096835,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            },
+            {
+                "name": "test_outputs.py::test_top_path",
+                "status": "passed",
+                "duration": 0.0008601950248703361,
+                "start": 1784246981.1102042,
+                "stop": 1784246981.1119606,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+            }
+        ]
+    }
+}
